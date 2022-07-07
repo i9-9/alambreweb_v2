@@ -1,0 +1,41 @@
+*{
+	font-family: $fontMain;
+}
+
+p{
+	@include texto(1.4em, 1.6em, grey);
+	margin-bottom: 2em;
+}
+
+.navbar-custom {
+	height:10vh;
+    background-color: $primary-color;
+	a {
+		color: #E8E8E8;
+	}
+	a:hover{
+		color: #C8C8C8;
+	}
+}
+
+h3{
+	font-size: 2em;
+	margin-top: 10px;
+}
+
+
+.card{
+	height: 500px;
+}
+
+.box{
+	@include d-flex(center, flex-start);
+}
+
+.contenedor-main{
+	height:100vh;
+	background-color: $primary-color;
+	p{
+		text-align: left;
+	}
+}
