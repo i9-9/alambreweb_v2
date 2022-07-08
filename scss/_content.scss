@@ -8,7 +8,7 @@ p{
 }
 
 .navbar-custom {
-	height:10vh;
+	
     background-color: $primary-color;
 	a {
 		color: #E8E8E8;
@@ -38,4 +38,8 @@ h3{
 	p{
 		text-align: left;
 	}
+}
+
+.col{
+	color: $third-color;
 }

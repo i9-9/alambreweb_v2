@@ -7856,7 +7856,6 @@ p {
   margin-bottom: 2em; }
 
 .navbar-custom {
-  height: 10vh;
   background-color: #2C2C2C; }
   .navbar-custom a {
     color: #E8E8E8; }
@@ -7880,3 +7879,6 @@ h3, .h3 {
   background-color: #2C2C2C; }
   .contenedor-main p {
     text-align: left; }
+
+.col {
+  color: #C8C8C8; }
