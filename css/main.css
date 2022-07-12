@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Syne+Mono&family=Work+Sans:wght@200&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -7846,7 +7846,10 @@ p {
   text-align: right; }
 
 * {
-  font-family: "Helvetica", sans-serif; }
+  font-family: "Syne Mono", sans-serif; }
+
+h5, .h5 {
+  color: #A2A2A2; }
 
 p {
   font-size: 1.4em;
@@ -7862,23 +7865,44 @@ p {
   .navbar-custom a:hover {
     color: #C8C8C8; }
 
-h3, .h3 {
-  font-size: 2em;
-  margin-top: 10px; }
-
-.card {
-  height: 500px; }
-
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; }
-
 .contenedor-main {
-  height: 100vh;
+  height: auto;
   background-color: #2C2C2C; }
   .contenedor-main p {
     text-align: left; }
 
 .col {
   color: #C8C8C8; }
+
+.cards {
+  background-color: #2C2C2C;
+  height: auto; }
+
+.card {
+  background-color: #A2A2A2; }
+
+.btn {
+  border-radius: 10px; }
+
+.btn-primary {
+  background: #2C2C2C;
+  border: none;
+  outline: none; }
+  .btn-primary:hover {
+    background: #C8C8C8;
+    border: solid black 1px;
+    outline: none;
+    border: none; }
+  .btn-primary:active {
+    background: #C8C8C8;
+    border: solid black 1px;
+    outline: none !important;
+    border: none; }
+  .btn-primary:focus {
+    background: #C8C8C8;
+    border: solid black 1px;
+    outline: none !important;
+    border: none; }
+
+footer {
+  color: #A2A2A2; }
