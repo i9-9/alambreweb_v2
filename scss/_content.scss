@@ -2,15 +2,21 @@
 	font-family: $fontMain;
 }
 
+body{
+	background-color: $primary-color;
+}
+
 h5{
 	color: white;
 
 }
 
 p{
-	@include texto(1.4em, 1.6em, grey);
-	margin-bottom: 2em;
+	font-size: 0.8rem;
 }
+
+
+
 
 .navbar-custom {
 	
@@ -30,6 +36,7 @@ p{
 	p{
 		text-align: left;
 	}
+
 }
 	
 
@@ -46,7 +53,8 @@ p{
 // }
 
 .card{
-	background-color: $secondary-color;
+	background-color: $fourth-color;
+	padding:0;
 }
 
 .btn{
@@ -79,13 +87,13 @@ p{
 
 footer{
 	color: $third-color;
+	font-size: 8px;
 }
 
-p{
-	font-size: 1rem;
-}
+
 
 .btn:focus,.btn:active {
 	outline: none !important;
 	box-shadow: none;
  }
+

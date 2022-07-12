@@ -7846,17 +7846,13 @@ p {
   text-align: right; }
 
 * {
-  font-family: "Syne Mono", sans-serif; }
+  font-family: Arial, "Syne Mono", sans-serif; }
 
 h5, .h5 {
   color: white; }
 
 p {
-  font-size: 1.4em;
-  line-height: 1.6em;
-  color: grey;
-  padding: 4px;
-  margin-bottom: 2em; }
+  font-size: 0.8rem; }
 
 .navbar-custom {
   background-color: #2C2C2C; }
@@ -7876,7 +7872,8 @@ p {
   color: #C8C8C8; }
 
 .card {
-  background-color: #A2A2A2; }
+  background-color: #4F4F4F;
+  padding: 0; }
 
 .btn {
   border-radius: 10px; }
@@ -7902,10 +7899,8 @@ p {
     border: none; }
 
 footer {
-  color: #C8C8C8; }
-
-p {
-  font-size: 1rem; }
+  color: #C8C8C8;
+  font-size: 8px; }
 
 .btn:focus, .btn:active {
   outline: none !important;
