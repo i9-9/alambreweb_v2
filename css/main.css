@@ -7849,7 +7849,7 @@ p {
   font-family: "Syne Mono", sans-serif; }
 
 h5, .h5 {
-  color: #A2A2A2; }
+  color: white; }
 
 p {
   font-size: 1.4em;
@@ -7867,16 +7867,13 @@ p {
 
 .contenedor-main {
   height: auto;
-  background-color: #2C2C2C; }
+  background-color: #2C2C2C;
+  padding: 0; }
   .contenedor-main p {
     text-align: left; }
 
 .col {
   color: #C8C8C8; }
-
-.cards {
-  background-color: #2C2C2C;
-  height: auto; }
 
 .card {
   background-color: #A2A2A2; }
@@ -7905,4 +7902,11 @@ p {
     border: none; }
 
 footer {
-  color: #A2A2A2; }
+  color: #C8C8C8; }
+
+p {
+  font-size: 1rem; }
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none; }

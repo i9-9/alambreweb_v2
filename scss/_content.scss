@@ -3,7 +3,8 @@
 }
 
 h5{
-	color: $secondary-color;
+	color: white;
+
 }
 
 p{
@@ -25,20 +26,24 @@ p{
 .contenedor-main{
 	height:auto;
 	background-color: $primary-color;
+	padding:0;
 	p{
 		text-align: left;
 	}
 }
+	
 
 .col{
 	color: $third-color;
 }
 
-.cards{
-	background-color: $primary-color;
-	
-	height: auto;
-}
+// .cartitas{
+// 	background-color: $primary-color;
+// 	padding:0;
+// 	height: auto;
+// 	display:flex;
+// 	justify-content: center;
+// }
 
 .card{
 	background-color: $secondary-color;
@@ -73,5 +78,14 @@ p{
 }
 
 footer{
-	color: $secondary-color;
+	color: $third-color;
 }
+
+p{
+	font-size: 1rem;
+}
+
+.btn:focus,.btn:active {
+	outline: none !important;
+	box-shadow: none;
+ }
