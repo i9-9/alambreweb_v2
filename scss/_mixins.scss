@@ -1,24 +1,3 @@
-// extends
-.btn-more{
-	width: 100px;
-	height: 30px;
-	border:none;
-	background: linear-gradient(to bottom, pink, violet);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	&:hover{
-		background-color:violet;
-		cursor: pointer;
-	}
-}
-
-.btn-rounded{
-	@extend .btn-more;
-	border-radius: 4px;
-}
-
-
 //mixins
 @mixin texto($size,$line-height,$color){
 	font-size: $size;
@@ -27,18 +6,10 @@
 	padding: 4px;
 }
 
-h3{
-	@include texto(2em,2.4em,deeppink);
-}
-
 @mixin d-flex($justify,$align){
 	display: flex;
 	justify-content: $justify;
 	align-items:$align
-}
-
-.box{
-	@include d-flex(center, center);
 }
 
 @mixin d-flex-column(){
@@ -65,20 +36,12 @@ p{
 //maps
 
 $paleta:(
-	'uno': #af40f6,
-    'dos': #df1ce6,
-    'tres':#bb20c1,
-    'cuatro':#ecdde9,
-    'cinco': #9b9a9b,
-    'seis': #292829,
-    'siete':#e205bb,
-    'ocho':#dfa1d4,
-    'nueve':#bd9eb8,
-    'diez':#e7cfe3,
-    'once': #6e646c,
-    'doce': #7f3472,
-    'trece':#3f393e,
+	'primary': #2C2C2C,
+    'secondary': #A2A2A2,
+    'third':#C8C8C8,
+    'fourth':#4F4F4F,
+	'fifth': #E8E8E8
 	);
 
-
+	
 
