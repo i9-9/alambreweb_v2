@@ -29,9 +29,15 @@ p{
     background-color: $primary-color;
 	a {
 		color: #E8E8E8;
+		outline:none;
 	}
 	a:hover{
 		color: #C8C8C8;
+		outline:none;
+	}
+	a:active, a:focus{
+		color: $secondary-color;
+		outline:none;
 	}
 }
 
@@ -73,18 +79,21 @@ p{
 		border: solid black 1px;
 		outline:none;
 		border: none;
+		color: $primary-color;
 	}
 	&:active{
 		background: $third-color;
 		border: solid black 1px;
 		outline:none !important;
 		border: none;
+		color: $primary-color;
 	}
 	&:focus{
 		background: $third-color;
 		border: solid black 1px;
 		outline:none !important;
 		border: none;
+		color: $primary-color;
 	}
 }
 
@@ -100,3 +109,17 @@ footer{
 	box-shadow: none;
  }
 
+.form-label{
+	color: $secondary-color;
+}
+
+form{
+	outline:none;
+	&:hover, :active, :focus{
+		outline:none;
+	}
+}
+
+img{
+	padding:0.2vw !important;
+}
