@@ -11,6 +11,13 @@ h5{
 
 }
 
+h4{
+	font-size: 1rem;
+	color: $primary-color;
+	line-height: 25px;
+
+}
+
 p{
 	font-size: 0.8rem;
 }
@@ -28,11 +35,11 @@ p{
 	
     background-color: $primary-color;
 	a {
-		color: #E8E8E8;
+		color: $secondary-color;
 		outline:none;
 	}
 	a:hover{
-		color: #C8C8C8;
+		color: $secondary-color;
 		outline:none;
 	}
 	a:active, a:focus{
@@ -74,27 +81,14 @@ p{
 	background: $primary-color;
 	border: none;
 	outline:none;
-	&:hover{
+	&:hover, :active, :focus{
 		background: $fifth-color;
 		border: solid black 1px;
 		outline:none;
 		border: none;
 		color: $primary-color;
 	}
-	&:active{
-		background: $third-color;
-		border: solid black 1px;
-		outline:none !important;
-		border: none;
-		color: $primary-color;
-	}
-	&:focus{
-		background: $third-color;
-		border: solid black 1px;
-		outline:none !important;
-		border: none;
-		color: $primary-color;
-	}
+
 }
 
 footer{
@@ -122,4 +116,42 @@ form{
 
 img{
 	padding:0.2vw !important;
+}
+
+.btn-outline-primary {
+    color: $third-color;
+    border-color: $third-color;
+	&:hover, :active, :focus{
+		color: $fifth-color;
+		border-color: $third-color;
+		background-color: $fourth-color;
+	}
+}
+
+.contacto{
+	background-color: $primary-color;
+}
+
+.col-mixes{
+	background-color: $secondary-color;
+}
+
+// .img-mix{
+// 	height:300px;
+// }
+
+.infotxt{
+	font-size: 3.6rem;
+	color: $secondary-color;
+	font-weight: 700;
+	padding: 1rem 12rem;
+	line-height:4.2rem;
+	&:hover{
+		color: $secondary-color;
+	}
+
+}
+
+span{
+	color: $fifth-color;
 }

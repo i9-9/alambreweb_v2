@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Syne+Mono&family=Work+Sans:wght@200&display=swap");
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-lt-std-55");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -7817,16 +7817,21 @@ textarea.form-control-lg {
   align-items: center; }
 
 p {
-  text-align: right; }
+  text-align: left; }
 
 * {
-  font-family: Arial, "Syne Mono", sans-serif; }
+  font-family: "Helvetica Neue LT Std", sans-serif; }
 
 body {
   background-color: #2C2C2C; }
 
 h5, .h5 {
   color: white; }
+
+h4, .h4 {
+  font-size: 1rem;
+  color: #2C2C2C;
+  line-height: 25px; }
 
 p {
   font-size: 0.8rem; }
@@ -7840,10 +7845,10 @@ p {
 .navbar-custom {
   background-color: #2C2C2C; }
   .navbar-custom a {
-    color: #E8E8E8;
+    color: #A2A2A2;
     outline: none; }
   .navbar-custom a:hover {
-    color: #C8C8C8;
+    color: #A2A2A2;
     outline: none; }
   .navbar-custom a:active, .navbar-custom a:focus {
     color: #A2A2A2;
@@ -7874,22 +7879,10 @@ p {
   background: #2C2C2C;
   border: none;
   outline: none; }
-  .btn-primary:hover {
+  .btn-primary:hover, .btn-primary :active, .btn-primary :focus {
     background: #E8E8E8;
     border: solid black 1px;
     outline: none;
-    border: none;
-    color: #2C2C2C; }
-  .btn-primary:active {
-    background: #C8C8C8;
-    border: solid black 1px;
-    outline: none !important;
-    border: none;
-    color: #2C2C2C; }
-  .btn-primary:focus {
-    background: #C8C8C8;
-    border: solid black 1px;
-    outline: none !important;
     border: none;
     color: #2C2C2C; }
 
@@ -7911,3 +7904,29 @@ form {
 
 img {
   padding: 0.2vw !important; }
+
+.btn-outline-primary {
+  color: #C8C8C8;
+  border-color: #C8C8C8; }
+  .btn-outline-primary:hover, .btn-outline-primary :active, .btn-outline-primary :focus {
+    color: #E8E8E8;
+    border-color: #C8C8C8;
+    background-color: #4F4F4F; }
+
+.contacto {
+  background-color: #2C2C2C; }
+
+.col-mixes {
+  background-color: #A2A2A2; }
+
+.infotxt {
+  font-size: 3.6rem;
+  color: #A2A2A2;
+  font-weight: 700;
+  padding: 1rem 12rem;
+  line-height: 4.2rem; }
+  .infotxt:hover {
+    color: #A2A2A2; }
+
+span {
+  color: #E8E8E8; }
