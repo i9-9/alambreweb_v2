@@ -7883,8 +7883,8 @@ p {
     border: none;
     color: #2C2C2C; }
 
-footer {
-  color: #C8C8C8;
+.footer {
+  color: #A2A2A2;
   font-size: 10px; }
 
 .btn:focus, .btn:active {
