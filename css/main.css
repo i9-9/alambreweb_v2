@@ -7917,19 +7917,26 @@ img {
   background-color: #A2A2A2; }
 
 .infotxt {
-  font-size: 11rem;
+  font-size: 3rem;
   color: #E8E8E8;
-  line-height: 13rem;
+  line-height: 4rem;
   padding: 10px; }
   .infotxt a {
-    color: #E8E8E8; }
+    color: #A2A2A2; }
     .infotxt a:hover {
       color: #E8E8E8; }
   .infotxt span {
     color: #4F4F4F; }
+  @media (min-width: 1200px) {
+    .infotxt {
+      font-size: 10rem;
+      line-height: 13rem; } }
 
 .episodio {
   color: #A2A2A2; }
 
 .newsletter {
   background-color: #A2A2A2; }
+
+html {
+  font-size: 1rem; }

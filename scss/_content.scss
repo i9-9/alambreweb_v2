@@ -139,18 +139,22 @@ img{
 // }
 
 .infotxt{
-	font-size: 11rem;
+	font-size: 3rem;
 	color: $fifth-color;
-	line-height: 13rem;
+	line-height: 4rem;
 	padding: 10px; 
 	a{
-		color: $fifth-color;
+		color: $secondary-color;
 		&:hover{
 			color: $fifth-color;
 		}
 	}
 	span{	
 		color: $fourth-color;
+	}
+	@include media-breakpoint-up(xl){
+		font-size:10rem;
+		line-height: 13rem;
 	}
 }
 
@@ -161,3 +165,7 @@ img{
 .newsletter {
 	background-color: $secondary-color;
 }
+
+html {
+	font-size: 1rem;
+  }
