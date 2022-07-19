@@ -10279,7 +10279,7 @@ p {
 }
 
 * {
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 }
 
 body {
@@ -10414,6 +10414,9 @@ img {
   padding: 10px;
 }
 .infotxt a {
+  color: #E8E8E8;
+}
+.infotxt a:hover {
   color: #E8E8E8;
 }
 .infotxt span {

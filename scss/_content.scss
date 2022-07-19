@@ -57,11 +57,8 @@ p{
 	}
 
 }
-	
 
-.col{
-	color: $third-color;
-}
+
 
 .cartitas{
 	height:auto;
@@ -148,8 +145,19 @@ img{
 	padding: 10px; 
 	a{
 		color: $fifth-color;
+		&:hover{
+			color: $fifth-color;
+		}
 	}
-	span{
+	span{	
 		color: $fourth-color;
 	}
+}
+
+.episodio{
+	color: $secondary-color;
+}
+
+.newsletter {
+	background-color: $secondary-color;
 }
