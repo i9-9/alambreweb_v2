@@ -10282,6 +10282,10 @@ p {
   font-family: "Helvetica Neue LT Std", Helvetica, sans-serif;
 }
 
+html {
+  font-size: 1rem;
+}
+
 body {
   background-color: #2C2C2C;
 }
@@ -10316,11 +10320,27 @@ p {
   outline: none;
 }
 .navbar-custom a:hover {
-  color: #A2A2A2;
+  color: #C8C8C8;
   outline: none;
 }
 .navbar-custom a:active, .navbar-custom a:focus {
-  color: #A2A2A2;
+  color: #E8E8E8;
+  outline: none;
+}
+
+.sidebar-custom {
+  background-color: #C8C8C8;
+}
+.sidebar-custom a {
+  color: #4F4F4F;
+  outline: none;
+}
+.sidebar-custom a:hover {
+  color: #E8E8E8;
+  outline: none;
+}
+.sidebar-custom a:active, .sidebar-custom a:focus {
+  color: #E8E8E8;
   outline: none;
 }
 
@@ -10333,8 +10353,8 @@ p {
   text-align: left;
 }
 
-.col {
-  color: #C8C8C8;
+.offcanvas-title {
+  justify-content: center;
 }
 
 .cartitas {
@@ -10348,7 +10368,17 @@ p {
 }
 
 .btn {
-  border-radius: 10px;
+  padding: 12px 16px;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.btn:active, .btn:focus {
+  background-color: #2C2C2C;
+  border-color: #2C2C2C;
 }
 
 .btn-primary {
@@ -10364,8 +10394,8 @@ p {
   color: #2C2C2C;
 }
 
-footer {
-  color: #C8C8C8;
+.footer {
+  color: #A2A2A2;
   font-size: 10px;
 }
 
@@ -10408,17 +10438,95 @@ img {
 }
 
 .infotxt {
-  font-size: 11rem;
+  font-size: 3rem;
   color: #E8E8E8;
-  line-height: 13rem;
+  line-height: 4rem;
   padding: 10px;
 }
 .infotxt a {
-  color: #E8E8E8;
+  color: #A2A2A2;
 }
 .infotxt a:hover {
   color: #E8E8E8;
 }
 .infotxt span {
   color: #4F4F4F;
+}
+@media (min-width: 1200px) {
+  .infotxt {
+    font-size: 10rem;
+    line-height: 13rem;
+  }
+}
+
+.episodio {
+  color: #A2A2A2;
+}
+
+.newsletter {
+  background-color: #A2A2A2;
+}
+
+.marquee {
+  background-color: #A2A2A2;
+  color: #2C2C2C;
+  width: 100%;
+  padding: 5px 5px;
+  text-align: center;
+  overflow: hidden;
+}
+.marquee h3, .marquee .h3 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.marquee h3 .marquee-title, .marquee .h3 .marquee-title {
+  margin-right: 20px;
+  float: left;
+}
+
+.marquee-wrapper {
+  width: 100000px;
+  -webkit-animation: marqueeAnimation 120s linear 0s infinite running;
+          animation: marqueeAnimation 120s linear 0s infinite running;
+}
+
+.text-stroke-black {
+  color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+@-webkit-keyframes marqueeAnimation {
+  100% {
+    transform: translateX(-4600px);
+  }
+}
+
+@keyframes marqueeAnimation {
+  100% {
+    transform: translateX(-4600px);
+  }
+}
+.loguito {
+  -webkit-animation: rotacion 5s linear infinite alternate;
+          animation: rotacion 5s linear infinite alternate;
+}
+
+@-webkit-keyframes rotacion {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }/*# sourceMappingURL=main.css.map */

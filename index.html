@@ -11,40 +11,98 @@
     content="ALAMBRE, SONIDO, MUSICA, VISUAL, AUDIOVISUAL, IMAGENES, BUENOS AIRES, ARGENTINA, DIGITAL, PHYSICAL">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <title>alambre</title>
+    <link rel="shortcut icon" type="image/jpg" href="./img/favicon_alambre.jpg"/>
+    <title>Alambre</title>
 </head>
 <body>
-    <!-- comienza nav  -->
-    <nav class="navbar navbar-expand-lg  navbar-custom vh-10 p-0">
-        <div class="container-fluid">
+<!-- marquee -->
+<div class="marquee">
+  <h3>
+    <div class="marquee-wrapper">
+      <div class="marquee-title">
+        ✸PRÓXIMO EVENTO: AXN4 - LOCACION SECRETA. ENTRADAS <span class="text-stroke-black">AQUÍ</span>
+      </div>
+      <div class="marquee-title">
+        ✸PRÓXIMO EVENTO: AXN4 - LOCACION SECRETA. ENTRADAS <span class="text-stroke-black">AQUÍ</span>
+      </div>
+      <div class="marquee-title">
+        ✸PRÓXIMO EVENTO: AXN4 - LOCACION SECRETA. ENTRADAS <span class="text-stroke-black">AQUÍ</span>
+      </div>
+      <div class="marquee-title">
+        ✸PRÓXIMO EVENTO: AXN4 - LOCACION SECRETA. ENTRADAS <span class="text-stroke-black">AQUÍ</span>
+      </div>
+      <div class="marquee-title">
+        ✸PRÓXIMO EVENTO: AXN4 - LOCACION SECRETA. ENTRADAS <span class="text-stroke-black">AQUÍ</span>
+      </div>
+      <div class="marquee-title">
+        ✸PRÓXIMO EVENTO: AXN4 - LOCACION SECRETA. ENTRADAS <span class="text-stroke-black">AQUÍ</span>
+      </div>
+      <div class="marquee-title">
+        ✸PRÓXIMO EVENTO: AXN4 - LOCACION SECRETA. ENTRADAS <span class="text-stroke-black">AQUÍ</span>
+      </div>
+      <div class="marquee-title">
+        ✸PRÓXIMO EVENTO: AXN4 - LOCACION SECRETA. ENTRADAS <span class="text-stroke-black">AQUÍ</span>
+      </div>
+      <div class="marquee-title">
+        ✸PRÓXIMO EVENTO: AXN4 - LOCACION SECRETA. ENTRADAS <span class="text-stroke-black">AQUÍ</span>
+      </div>
+    </div>
+  </h3>
+</div>
+<!-- termina marquee -->
+
+
+    
+ 
+      <!-- sidenav -->
+      <nav class="navbar navbar-custom">
+        <div class="container-fluid navbar-custom">
           <a class="navbar-brand" href="index.html">
             <img src="./img/alambre_logo_1.svg" alt="">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./info.html">Info</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./mixes.html">Mixes/Podcast</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-              </li>
-            </ul>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header sidebar-custom">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <a class="navbar-brand" href="index.html">
+                  <img src="./img/alambre_logo_1.svg" alt="">
+                </a>
+              </h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body sidebar-custom d-flex flex-column justify-content-between">
+              <ul class="navbar-nav flex-grow-1 pe-3 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">✸ Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./mixes.html">✸ Mixes/Podcasts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./mixes.html">✸ Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./info.html">✸ Info</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">✸ Contacto</a>
+                </li>
+              </ul>
+              <div class="container containerDelLoguito">
+                <hr>
+                <img src="./img/favicon_alambre.jpg" alt="logo de alambre" class="img-thumbnail rounded mx-auto d-block loguito" style="width:100px; height:auto; background-color: #131313; border: solid #131313" >
+              </div>
+            </div>
           </div>
         </div>
       </nav>
-    <!-- termina nav -->
+      <!-- termina sidenav -->
+    
   <main>
         <!-- comienza hero -->
-        <div class="container-fluid p-0">
+        <div class="container-fluid p-0 mb-5">
           <div id="carouselExampleControls" class="carousel slide hero vh-90" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -104,7 +162,7 @@
               <div class="card-body">
                 <h5 class="card-title">AXN3</h5>
                 <p class="card-text">@ Sub-S</p>
-                <a href="#" class="btn btn-sm btn-primary px-5">Info</a>
+                <a href="#" class="btn btn-primary btn-sm btn-primary">Info</a>
               </div>
             </div>
           </div>
@@ -114,7 +172,7 @@
               <div class="card-body">
                 <h5 class="card-title">AXN2</h5>
                 <p class="card-text">@ OHCC</p>
-                <a href="#" class="btn btn-sm btn-primary px-5">Info</a>
+                <a href="#" class="btn btn-sm btn-primary">Info</a>
               </div>
             </div>
           </div>
@@ -124,7 +182,7 @@
               <div class="card-body">
                 <h5 class="card-title">AXN1</h5>
                 <p class="card-text">@ Planta Inclán</p>
-                <a href="#" class="btn btn-sm btn-primary px-5">Info</a>
+                <a href="#" class="btn btn-sm btn-primary">Info</a>
               </div>
             </div>
           </div>
@@ -134,7 +192,7 @@
               <div class="card-body">
                 <h5 class="card-title">Alambre 7</h5>
                 <p class="card-text">@ Sub-S</p>
-                <a href="#" class="btn btn-sm  btn-primary px-5">Info</a>
+                <a href="#" class="btn btn-sm  btn-primary">Info</a>
               </div>
             </div>
           </div>

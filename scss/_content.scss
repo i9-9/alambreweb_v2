@@ -2,6 +2,10 @@
 	font-family: $fontMain;
 }
 
+html {
+	font-size: 1rem;
+  }
+
 body{
 	background-color: $primary-color;
 }
@@ -39,11 +43,28 @@ p{
 		outline:none;
 	}
 	a:hover{
-		color: $secondary-color;
+		color: $third-color;
 		outline:none;
 	}
 	a:active, a:focus{
-		color: $secondary-color;
+		color: $fifth-color;
+		outline:none;
+	}
+}
+
+.sidebar-custom {
+	
+    background-color: $third-color;
+	a {
+		color: $fourth-color;
+		outline:none;
+	}
+	a:hover{
+		color: $fifth-color;
+		outline:none;
+	}
+	a:active, a:focus{
+		color: $fifth-color;
 		outline:none;
 	}
 }
@@ -58,6 +79,9 @@ p{
 
 }
 
+.offcanvas-title{
+	justify-content: center;
+}
 
 
 .cartitas{
@@ -70,8 +94,26 @@ p{
 	height:auto;
 }
 
+// .btn{
+// 	&:hover, :active, :focus{
+// 		background-color: $secondary-color;
+// 	}
+
+
+// }
+
 .btn{
-	border-radius: 10px;
+	padding: 12px 16px;
+	border-radius: 5px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.btn:active, .btn:focus{
+	background-color: $primary-color;
+    border-color: $primary-color;
 }
 
 .btn-primary{
@@ -166,6 +208,49 @@ img{
 	background-color: $secondary-color;
 }
 
-html {
-	font-size: 1rem;
-  }
+.marquee{
+	background-color: $secondary-color;
+	color:$primary-color;
+	width:100%;
+	padding: 5px 5px;
+	text-align:center;
+	overflow: hidden;
+	h3{
+		font-size: 0.75rem;
+		font-weight: 500;
+		text-transform:uppercase;
+		.marquee-title{
+			margin-right:20px;
+			float:left;
+		}
+	}
+}
+
+.marquee-wrapper{
+	width:100000px;
+	animation: marqueeAnimation 120s linear 0s infinite running;
+}
+
+.text-stroke-black{
+	color:transparent;
+	-webkit-text-stroke: 1px;
+	-webkit-text-stroke-color: black;
+
+}
+
+@keyframes marqueeAnimation {
+	100% {
+		transform: translateX(-4600px);
+	}
+}
+
+.loguito{
+	animation: rotacion 5s linear infinite alternate;
+}
+
+
+@keyframes rotacion {
+	from{transform: rotateY(0deg);}
+
+	to{transform: rotateY(360deg)} 
+}
