@@ -94,6 +94,19 @@ p{
 	height:auto;
 }
 
+.card:hover{
+	// transform: scale(1.05);
+ 	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+	 animation: cardsR 0.2s linear 1 normal forwards;
+}
+
+@keyframes cardsR {
+	from{transform: scale(1.0);}
+
+	to{transform: scale(1.05)} 
+
+}
+
 // .btn{
 // 	&:hover, :active, :focus{
 // 		background-color: $secondary-color;
@@ -109,11 +122,14 @@ p{
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 17px;
+	cursor: pointer;
+
 }
 
 .btn:active, .btn:focus{
 	background-color: $primary-color;
     border-color: $primary-color;
+	cursor: pointer;
 }
 
 .btn-primary{
@@ -228,7 +244,7 @@ img{
 
 .marquee-wrapper{
 	width:100000px;
-	animation: marqueeAnimation 120s linear 0s infinite running;
+	animation: marqueeAnimation 200s linear 0s infinite running;
 }
 
 .text-stroke-black{
@@ -254,3 +270,4 @@ img{
 
 	to{transform: rotateY(360deg)} 
 }
+
