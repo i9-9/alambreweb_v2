@@ -17,19 +17,19 @@
 <body> 
   
    <!-- sidenav -->
-   <nav class="navbar navbar-custom">
+   <nav class="navbar navbar-custom fixed-top">
     <div class="container-fluid navbar-custom">
       <a class="navbar-brand" href="index.html">
-        <img src="./img/alambre_logo_1.svg" alt="">
+        <img src="./img/alambre_logo_1.svg" alt="logo de alambre" style="width: 12rem">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas offcanvas-end text-bg-dark rounded" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header sidebar-custom">
           <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
             <a class="navbar-brand" href="index.html">
-              <img src="./img/alambre_logo_1.svg" alt="">
+              <img src="./img/alambre_logo_1.svg" alt="logo de alambre" style="width: 12rem">
             </a>
           </h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -63,40 +63,54 @@
   <!-- termina sidenav -->
     
 
-      <main>
+      <main class="mt-5">
         <!-- contact form -->
-        <div class="container py-4 contacto">
-            <div class="container-fluid">
-                <form id="contactForm">
-                    <div class="mb-3">
-                        <label class="form-label" for="name">Nombre</label>
-                        <input class="form-control" id="name" type="text" placeholder="..." data-sb-validations="required" />
-                        <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es obligatorio</div>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="emailAddress">Email</label>
-                        <input class="form-control" id="emailAddress" type="email" placeholder="..." data-sb-validations="required, email" />
-                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">El email es obligatorio </div>
-                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">La direccion de email no es valida</div>
-                    </div>
-                     <div class="mb-3">
-                        <label class="form-label" for="message">Mensaje</label>
-                        <textarea class="form-control" id="message" type="text" placeholder="..." style="height: 10rem;" data-sb-validations="required"></textarea>
-                        <div class="invalid-feedback" data-sb-feedback="message:required">Es obligatorio enviar un mensaje</div>
-                    </div>
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center mb-3">Enviado!</div>
-                    </div>
-                    <div class="d-none" id="submitErrorMessage">
-                        <div class="text-center text-danger mb-3">Error enviando el mensaje!</div>
-                    </div>
-                    <div class="d-flex">
-                        <button class="btn btn-outline-primary btn-sm" type="submit">Enviar</button>
-                    </div>
-                </form>
+        <div class="container-fluid mb-3 p-4 mt-5">
+          <div class="row">
+            <div class="col-md-4 p-4 infoBlock d-flex flex-column">
+              <h1>Informacion de contacto</h2>
+              <h5>Contactanos por este medio y te responderemos a la brevedad.</h5>
+            </p>
             </div>
+            <div class="col-md-8">
+              <div class="container py-4 contacto">
+                <div class="container">
+                    <form id="contactForm">
+                      
+                        <div class="mb-3">
+                            <label class="form-label" for="name">Nombre</label>
+                            <input class="form-control" id="name" type="text" placeholder="..." data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es obligatorio</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="emailAddress">Email</label>
+                            <input class="form-control" id="emailAddress" type="email" placeholder="..." data-sb-validations="required, email" />
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">El email es obligatorio </div>
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">La direccion de email no es válida</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="message">Mensaje</label>
+                            <textarea class="form-control" id="message" type="text" placeholder="..." style="height: 10rem; background-color: #C8C8C8" data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Es obligatorio enviar un mensaje</div>
+                        </div>
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">Enviado!</div>
+                        </div>
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error enviando el mensaje!</div>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-lg btn-secondary px-4" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+          </div>
         </div>
-        <!-- contact form -->
+
+
+
       </main>
       
       <footer>

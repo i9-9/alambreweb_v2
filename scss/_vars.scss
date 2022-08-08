@@ -11,17 +11,18 @@ $fifth-color: #E8E8E8;
 $primary: #2C2C2C;
 $secondary: #A2A2A2;
 $dark: #2C2C2C;
+$light: #E8E8E8;
 
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-);
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// );
 
 $border-radius: 5px;
 $input-btn-padding-x-sm: 16px;

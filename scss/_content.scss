@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
 *{
 	font-family: $fontMain;
 }
@@ -220,9 +222,6 @@ img{
 	color: $secondary-color;
 }
 
-.newsletter {
-	background-color: $secondary-color;
-}
 
 .marquee{
 	background-color: $secondary-color;
@@ -271,3 +270,27 @@ img{
 	to{transform: rotateY(360deg)} 
 }
 
+.offcanvas{
+	--bs-offcanvas-width: 250px;
+}
+
+.infoBlock{
+	background: $secondary-color;
+	border-radius: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+	background-color : $third-color; 
+  }
+
+.contactForm{
+	border: 1px solid black;
+  }
+
+.newsletter{
+
+}
+
+.fotoNewsletter{
+
+}
