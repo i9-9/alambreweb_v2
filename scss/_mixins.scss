@@ -1,36 +1,21 @@
 //mixins
-@mixin texto($size,$line-height,$color){
-	font-size: $size;
-	line-height: $line-height;
-	color:$color;
-	padding: 4px;
-}
 
-@mixin d-flex($justify,$align){
-	display: flex;
-	justify-content: $justify;
-	align-items:$align
-}
-
-@mixin d-flex-column(){
+@mixin col-center(){
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items:center;
 }
 
-.box2{
-	@include d-flex-column();
+@mixin txt($size,$line-height,$secondary-color){
+	font-size: $size;
+	line-height: $line-height;
+	color:$secondary-color;
 }
 
 @mixin text-align($align){
 	@if $align == center {text-align:center}
 	@else if $align == left {text-align:left}
 	@else if $align == right {text-align:right}
-}
-
-p{
-	@include text-align(left);
 }
 
 //maps

@@ -7845,15 +7845,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.box2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-p {
-  text-align: left; }
-
 * {
   font-family: "Helvetica Neue LT Std", Helvetica, sans-serif; }
 
@@ -8058,3 +8049,8 @@ input[type="text"], input[type="email"], textarea {
 
 .contactForm {
   border: 1px solid black; }
+
+.imgfecha {
+  width: 300px;
+  margin: auto;
+  display: block; }
